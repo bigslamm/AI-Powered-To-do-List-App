@@ -26,7 +26,7 @@ export default function App() {
   }
 
   return (
-    <div>
+    <div className="main">
       <Header />
       <Form onAddItems={handleAddItem} />
       <ParkingList
@@ -43,11 +43,16 @@ export default function App() {
 function Header() {
   return (
     <div>
-      <p className="p-20">
+      <p className="">
         Doing what you love is the cornerstone of having abundance in your
         life"; Wayne Dyer
       </p>
       <h1 className="text-xl p-20">The first AI-powered The To Do List</h1>
+      {/* <ul className="list-style">
+        <li>bottle</li>
+        <li>mother </li>
+        <li>father</li>
+      </ul> */}
     </div>
   );
 }

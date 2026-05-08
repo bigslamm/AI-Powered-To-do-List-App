@@ -9,7 +9,7 @@ export default function ParkingList({
   console.log(items);
   return (
     <div>
-      <ul>
+      <ul className="list-style">
         {items.map((item) => (
           <Item
             item={item}

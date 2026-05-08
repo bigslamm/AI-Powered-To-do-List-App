@@ -18,19 +18,16 @@ export default function Form({ onAddItems }) {
   }
   return (
     <form onSubmit={handleSubmit}>
-      <h3 className="bg-blue-500 text-white px-4 py-2 rounded">
-        
-        What do you need to do today
-      </h3>
-      <input
-        type="text"
-        placeholder="Item..."
-        value={description}
-        onChange={(e) => setDescription(e.target.value)}
-      />
-      <button className="">
-        Add
-      </button>
+      <h3 className="">What do you need to do today</h3>
+      <div className="form-box">
+        <input
+          type="text"
+          placeholder="Item..."
+          value={description}
+          onChange={(e) => setDescription(e.target.value)}
+        />
+        <button className="button-add">+</button>
+      </div>
     </form>
   );
 }
